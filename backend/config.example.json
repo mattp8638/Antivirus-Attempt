@@ -1,0 +1,12 @@
+{
+  "timeout_seconds": 8,
+  "virustotal": {
+    "enabled": true,
+    "api_key": "VT_API_KEY_HERE"
+  },
+  "hybrid_analysis": {
+    "enabled": true,
+    "api_key": "HYBRID_ANALYSIS_API_KEY_HERE",
+    "user_agent": "TamsilCMS-Sentinel"
+  }
+}

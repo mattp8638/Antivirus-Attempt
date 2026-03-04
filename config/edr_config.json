@@ -1,0 +1,58 @@
+{
+  "api_endpoint": "https://your-server.com",
+  "api_key": "your-api-key-here",
+  
+  "process_monitor": {
+    "scan_interval": 1,
+    "calculate_hashes": true,
+    "verify_signatures": true,
+    "track_network": true
+  },
+  
+  "memory_scanner": {
+    "continuous_scan_interval": 300,
+    "targeted_scan_interval": 10,
+    "max_memory_read": 10485760,
+    "enable_yara": true
+  },
+  
+  "registry_monitor": {
+    "scan_interval": 5,
+    "create_baseline": true
+  },
+  
+  "network_monitor": {
+    "track_connections": true,
+    "detect_beaconing": true,
+    "analyze_dns": true,
+    "beacon_window": 3600
+  },
+  
+  "timeline": {
+    "max_events": 50000,
+    "correlation_window": 1800,
+    "auto_close_chains": true
+  },
+  
+  "yara_rules_path": "yara_rules/memory_rules.yar",
+  "ui_status_path": "C:\\ProgramData\\TamsilCMS\\state\\agent_status.json",
+  "ui_command_path": "C:\\ProgramData\\TamsilCMS\\state\\agent_command.json",
+  
+  "logging": {
+    "level": "INFO",
+    "file": "C:\\ProgramData\\TamsilCMS\\logs\\edr_agent.log",
+    "max_size": 10485760,
+    "backup_count": 5
+  },
+
+  "response": {
+    "profile": "detect_only",
+    "cooldown_seconds": 300,
+    "allowlisted_process_names": [
+      "trustedupdater.exe"
+    ],
+    "allowlisted_process_paths": [
+      "c:/program files/trusted/updater.exe"
+    ]
+  }
+}

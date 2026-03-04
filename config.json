@@ -1,0 +1,9 @@
+{
+  "api_endpoint": "https://api.tamsilcms.com",
+  "api_key": "your-api-key-here",
+  "reporting_interval_secs": 10,
+  "enable_etw": true,
+  "enable_amsi": true,
+  "enable_ml_scoring": true,
+  "enable_threat_intel": true
+}
